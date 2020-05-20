@@ -17,6 +17,7 @@ namespace TicTacToe
         {
             InitializeComponent();
             InitializeGrid();
+            InitializeCells();
         }
 
         private void InitializeGrid()
@@ -27,7 +28,12 @@ namespace TicTacToe
 
         private void InitializeCells()
         {
-            
+            string labelName;
+            for (int i = 1; i <= 9; i++)
+            {
+                labelName = "label" + i;
+                Grid.Controls[labelName].Text = string.Empty;
+            }
         }
 
         private void Player_Click(object sender, EventArgs e)
