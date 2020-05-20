@@ -15,6 +15,13 @@ namespace TicTacToe
         public Form1()
         {
             InitializeComponent();
+            InitializeGrid();
+        }
+
+        private void InitializeGrid()
+        {
+            Grid.BackColor = Color.LightSkyBlue;
+            Grid.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
         }
     }
 }
